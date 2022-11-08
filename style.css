@@ -8,7 +8,7 @@
     font-family:"poppins",sans-serif;
 }
 
-.showcse{
+.showcase{
     position: absolute; 
     right: 0;
     width: 100%;
@@ -17,8 +17,8 @@
     display: flex; 
     justify-content:space-between;
     align-items: center;
-    background:#111;
-    color: #fff;
+    background:white;
+    color: rgb(28, 30, 28);
     z-index:2;
     transition: 0.5s;
 }
@@ -28,7 +28,7 @@
     right: 300px;
 }
 
-.showcse header{
+.showcase header{
     position: absolute;
     top:0;
     left:0;
@@ -69,9 +69,10 @@
     top:0 ;
     left: 0;
     width: 100%;
-    height: 100% ;
+    height: 75% ;
     object-fit:cover;
     opacity:0.8;
+    z-index: -1;
 }
 
 .overlay{
@@ -80,8 +81,8 @@
     left: 0;
     width: 100%;
     height: 100% ;
-    background:;
-    mix-blend-mode:overlay
+    background: grey;
+    mix-blend-mode:overlay;
 }
 
 .text{
@@ -170,7 +171,7 @@ letter-spacing: 6px;
 }
 
 .menu ul li a{
-    text-align: none;
+    text-align: none; 
     font-size: 24px;
     color: #111;
 }
@@ -178,8 +179,33 @@ letter-spacing: 6px;
 menu ul a :hover{
     color:#111;
 }
+ul li{
+    list-style: none;
+}
+ul li a{
+    display: block;
+ text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    color: #1e1e1e;
+    line-height: 100px;
 
-
+}
+nav{
+    width:100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height:8px;
+    z-index: 999;
+}
+.logo{
+    color: bisque;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
 
 @media(max-width:790px){
     .showcase, .showcase header{
@@ -195,3 +221,29 @@ menu ul a :hover{
     }
 }
 
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+  }
+  li {
+    float: left;
+  }
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  li a:hover {
+    background-color: white;
+  }
+
+  footer{
+    color: black;
+  }
